@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="Zadbamy perfekcyjną czystość elewacji, dachu i kostki brukowej. W twoim domu i firmie.">
+    <meta name="keywords" content="czyszczenie kostki czyszczenie dachu czyszczenie elewacji czyszczenie paneli fotovoltaicznych czyszczenie paneli fotowoltaicznych usuwanie plam olejowych">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Ecomiasto</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="/" class="header__logo">
+                    <img src="img/svg/logo.svg" alt="Logo - Ecomiasto">
+                </a>
+                <nav class="nav nav_mobile">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" onclick="scrollToTop()">Początek</a></li>
+                        <li class="nav__item"><a href="#services">Usługi</a></li>
+                        <li class="nav__item"><a href="#technology">Technologia</a></li>
+                        <li class="nav__item"><a href="gallery.html">Galeria</a></li>
+                        <li class="nav__item"><a href="#contacts">Kontakt</a></li>
+                        <a href="tel:+48730789469" class="menu__btn btn nav__btn">Zadzwoń</a>
+                    </ul>
+                </nav>
+                <a href="tel:+48730789469" class="menu__btn btn">Zadzwoń</a>
+                <div class="menu__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="intro" style="background-image: url(img/intro-bg.jpg);">
+        <div class="container">
+            <div class="intro__wrap">
+                <h1 class="intro__title">
+                    Zadbamy perfekcyjną czystość elewacji, dachu i kostki brukowej. <br> W twoim domu i firmie.
+                </h1>
+                <div class="intro__btns">
+                    <a href="tel:+48730789469" class="intro__btn intro__btn_white btn">umów się</a>
+                    <a href="#gallery" class="intro__btn intro__btn_transparent">
+                        zobacz galerię
+                    </a>
+                </div>
+                <div class="intro__problems">
+                    <h4 class="intro__problems-title">Jesteśmy expertami w usuwaniu:</h4>
+                    <div class="intro__problems-wrapper">
+                        <div class="intro__problems-item">
+                            <img class="intro__problems-icon" src="img/svg/hashtag.svg" alt="hashtag">
+                            <p class="intro__problems-text">Plamy z oleju</p>
+                        </div>
+                        <div class="intro__problems-item">
+                            <img class="intro__problems-icon" src="img/svg/hashtag.svg" alt="hashtag">
+                            <p class="intro__problems-text">Slady po oponach</p>
+                        </div>
+                        <div class="intro__problems-item">
+                            <img class="intro__problems-icon" src="img/svg/hashtag.svg" alt="hashtag">
+                            <p class="intro__problems-text">Gumy do żucia</p>
+                        </div>
+                        <div class="intro__problems-item">
+                            <img class="intro__problems-icon" src="img/svg/hashtag.svg" alt="hashtag">
+                            <p class="intro__problems-text">Mchy, glony </p>
+                        </div>
+                        <div class="intro__problems-item">
+                            <img class="intro__problems-icon" src="img/svg/hashtag.svg" alt="hashtag">
+                            <p class="intro__problems-text">Zaprawy cementowe i kleje</p>
+                        </div>
+                        <div class="intro__problems-item">
+                            <img class="intro__problems-icon" src="img/svg/hashtag.svg" alt="hashtag">
+                            <p class="intro__problems-text">Rdzawe naloty</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services section scrollto" id="services">
+        <div class="container">
+            <div class="services__tabs tabs">
+                <div class="services__tabs-header tabs__header" id="tabs__header">
+                    <h2 class="services__title section-title">Nasze usługi</h2>
+                    <div class="services__nav">
+                        <button class="btn-prev-serv">
+                            <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 7H1M1 7L7.63597 1M1 7L7.63597 13" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="btn-next-serv">
+                            <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7H21M21 7L14.364 1M21 7L14.364 13" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="services__pagination">
+                        <span class="services__current">01</span> - <span class="services__all">04</span>
+                    </div>
+                    <div class="services__tabs-wrap">
+                        <button type="button" class="services__tabs-btn tabs__btn active" data-btn="1">Czyszczenie kostki brukowej i powierzchni płaskich</button>
+                        <button type="button" class="services__tabs-btn tabs__btn" data-btn="2">Czyszczenie dachu</button>
+                        <button type="button" class="services__tabs-btn tabs__btn"data-btn="3">Czyszczenie elewacji</button>
+                        <button type="button" class="services__tabs-btn tabs__btn"data-btn="4">Czyszczenie paneli fotovoltaicznych</button>
+                    </div>
+                </div>
+                <div class="services__content tabs__content" id="tabs__content">
+                    <div class="services__item tabs__item active" data-content="1">
+                        <img class="services__img" src="img/services/services-1.png" alt="Czyszczenie kostki brukowej i powierzchni płaskich">
+                        <a href="tel:+48730789469" class="services__btn blue-link btn blue-link_stroke">
+                            dowiedz się więcej
+                            <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7.5H20M20 7.5L13.5 1M20 7.5L13.5 14" stroke="#282828" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="services__item tabs__item" data-content="2">
+                        <img class="services__img" src="img/services/services-2.png" alt="Czyszczenie dachu">
+                        <a href="tel:+48730789469" class="services__btn blue-link btn blue-link_stroke">
+                            dowiedz się więcej
+                            <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7.5H20M20 7.5L13.5 1M20 7.5L13.5 14" stroke="#282828" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="services__item tabs__item" data-content="3">
+                        <img class="services__img" src="img/services/services-3.png" alt="Czyszczenie elewacji">
+                        <a href="tel:+48730789469" class="services__btn blue-link btn blue-link_stroke">
+                            dowiedz się więcej
+                            <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7.5H20M20 7.5L13.5 1M20 7.5L13.5 14" stroke="#282828" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="services__item tabs__item" data-content="4">
+                        <img class="services__img" src="img/services/services-4.png" alt="Czyszczenie paneli fotovoltaicznych">
+                        <a href="tel:+48730789469" class="services__btn blue-link btn blue-link_stroke">
+                            dowiedz się więcej
+                            <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7.5H20M20 7.5L13.5 1M20 7.5L13.5 14" stroke="#282828" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+   <section class="benefits section">
+        <div class="container">
+            <div class="benefits-swiper swiper">
+                <div class="benefits-swiper-wrapper swiper-wrapper">
+                    <div class="benefits-slide swiper-slide">
+                        <h4 class="swiper-slide__title swiper-slide__title_first"><span class="swiper-slide__num">01</span>Jak dbamy o klientów</h4>
+                        <p class="swiper-slide__descr swiper-slide__descr_first">Jako nieliczni używamy do czyszczenia innowacyjnej szczotki t-racer która 
+                            <span class="swiper-slide__descr_blue">nie rozrzuca błota i wody</span> na elewację, kamienie, krzewy i inną roślinność otaczającą kostkę.
+                        </p>
+                        <p class="swiper-slide__benefits">Nie rozrzucamy błota i wody</p>
+                    </div>
+                    <div class="benefits-slide swiper-slide">
+                        <h4 class="swiper-slide__title"><span class="swiper-slide__num">02</span>Jak dbamy o klientów</h4>
+                        <p class="swiper-slide__descr">Do czyszczenia dachów używamy profesjonalnych podnośników, które umożliwiają nam dostęp do każdego dachu 
+                            <span class="swiper-slide__descr_blue">nie uszkadzając</span> przy tym dachówki. 
+                        </p>
+                        <p class="swiper-slide__benefits">Dostęp do każdego dachu</p>
+                    </div>
+                    <div class="benefits-slide swiper-slide">
+                        <h4 class="swiper-slide__title"><span class="swiper-slide__num">03</span>Jak dbamy o klientów</h4>
+                        <p class="swiper-slide__descr">Do mycia używamy 
+                            <span class="swiper-slide__descr_blue">profesjonalnej chemii grzybobójczej.</span> Na koniec całą powierzchnię zabezpieczamy odpowiednim impregnatem.
+                        </p>
+                        <p class="swiper-slide__benefits">Zabezpieczamy powierzchnię</p>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+   <section class="technology section scrollto" id="technology">
+        <div class="container">
+            <div class="technology__tabs tabs">
+                <div class="technology__tabs-header tabs__header" id="tabs__header_tech">
+                    <h2 class="technology__title section-title">Technologia</h2>
+                    <div class="technology__nav">
+                        <button class="btn-prev-tech">
+                            <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 7H1M1 7L7.63597 1M1 7L7.63597 13" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="btn-next-tech">
+                            <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7H21M21 7L14.364 1M21 7L14.364 13" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="technology__pagination">
+                        <span class="technology__current">01 </span> - <span class="technology__all">05</span>
+                    </div>
+                    <div class="technology__tabs-wrap tabs-wrap">
+                        <button type="button" class="technology__tabs-btn tabs__btn_tech active" data-btn="1">Czyszczenie kostki brukowej</button>
+                        <button type="button" class="technology__tabs-btn tabs__btn_tech" data-btn="2">Mycie elewacji</button>
+                        <button type="button" class="technology__tabs-btn tabs__btn_tech"data-btn="3">Mycie dachu</button>
+                        <button type="button" class="technology__tabs-btn tabs__btn_tech"data-btn="4">Usuwanie plam olejowych</button>
+                        <button type="button" class="technology__tabs-btn tabs__btn_tech"data-btn="5">Czyszczenie paneli fotowoltaicznych</button>
+                    </div>
+                </div>
+                <div class="technology__content tabs__content" id="tabs__content_tech">
+                    <div class="technology__item tabs__item active" data-content="1">
+                        <img class="technology__img" src="img/technology/technology-1.jpg" alt="Czyszczenie kostki brukowej i powierzchni płaskich">
+                        <p class="technology__descr technology__descr_bottom">
+                            Na wstępie nakładamy aktywną pianę która zmiękcza brud i zabija glony. 
+                            Później używając myjki o ciśnieniu 250 bar oraz gorącej wody przystępujemy do czyszczenia. 
+                            Posiadamy również specjalną przystawkę która myje powierzenie wraz z odsysaniem brudu <span class="technology__descr_blue">nie zachlapując przy tym otoczenia.</span>
+                        </p>
+                        <p class="technology__descr">
+                            Na koniec oczywiście zawsze polecamy impregnację.
+                        </p>
+                        <a href="tel:+48730789469" class="technology__btn btn blue-link blue-link_stroke">
+                            zapytaj o Czyszczeniu kostki brukowej
+                            <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7.5H20M20 7.5L13.5 1M20 7.5L13.5 14" stroke="#282828" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="technology__item tabs__item" data-content="2">
+                        <img class="technology__img" src="img/technology/technology-2.jpg" alt="Mycie elewacji">
+                        <p class="technology__descr technology__descr_bottom">
+                            Za pomocą technologi która wykorzystuję specjalne środki chemiczne, ciepłą wodę oraz niskie ciśnienie wody podczas mycia jesteśmy w stanie uzyskać rewelacyjne efekty nie wypłukując przy tem tynku.
+                        </p>
+                        <p class="technology__descr technology__descr_bottom">
+                            Zdjęcia przed i po możecie zobaczy w <span class="technology__descr_blue"><a href="gallery.html" class="technology__descr-link">naszej galerii.</a></span>
+                        </p>
+                        <p class="technology__descr">
+                            Na koniec nakładamy specjalny impregnat w formie piany który zabezpiecza budynek przed zabrudzeniami.
+                        </p>
+                        <a href="tel:+48730789469" class="technology__btn btn blue-link blue-link_stroke">
+                            zapytaj o Myciu elewacji
+                            <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7.5H20M20 7.5L13.5 1M20 7.5L13.5 14" stroke="#282828" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="technology__item tabs__item" data-content="3">
+                        <img class="technology__img" src="img/technology/technology-3.jpg" alt="Mycie dachu">
+                        <p class="technology__descr">
+                            Podobnie jak przy myciu kostki nakładamy aktywną i całość myjemy za pomocą gorącej wody jednak przy nie co zmniejszonym ciśnieniu. 
+                            Do czyszczenia używamy własnych podnośników koszowych co umożliwia nam dotarcie w każdy zakamarek bez chodzenia po dachu <span class="technology__descr_blue">eliminując przy tym ryzyko uszkodzenia dachu.</span> 
+                            Całość oczywiście polecamy zaimpregnować.
+                        </p>
+                        <a href="tel:+48730789469" class="technology__btn btn blue-link blue-link_stroke">
+                            zapytaj o Mycie dachu
+                            <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7.5H20M20 7.5L13.5 1M20 7.5L13.5 14" stroke="#282828" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="technology__item tabs__item" data-content="4">
+                        <img class="technology__img" src="img/technology/technology-4.jpg" alt="Usuwanie plam olejowych">
+                        <p class="technology__descr technology__descr_bottom">
+                            Wylany olej na kostce <span class="technology__descr_blue">nie musi oznaczać jej wymiany.</span>
+                            Profesjonalna chemia, bardzo gorąca woda oraz bardzo wysokie <span class="technology__descr_blue">ciśnienie doskonale sobie radzą z takimi plamami.</span>
+                        </p>
+                        <p class="technology__descr">
+                            Od lat usuwamy skutecznie plamy dla małych, średnich i dużych firm oraz oczywiście dla gospodarstw domowych.
+                        </p>
+                        <a href="tel:+48730789469" class="technology__btn btn blue-link blue-link_stroke">
+                            zapytaj o Usuwaniu plam olejowych
+                            <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7.5H20M20 7.5L13.5 1M20 7.5L13.5 14" stroke="#282828" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="technology__item tabs__item" data-content="5">
+                        <img class="technology__img" src="img/technology/technology-5.jpg" alt="Czyszczenie paneli fotovoltaicznych">
+                        <p class="technology__descr technology__descr_bottom">
+                            Korzystając z naszych uslug oszczędzacie Państwo znaczące ilości pieniędzy, ale także przedłużacie żywotność swoich urządzeń. 
+                            Badania przeprowadzone przez naukowców jasno pokazują,
+                            że poprzez osiadające na panelach zanieczyszczenia atmosferyczne, kurz, glony, pleśnie i inne zabrudzenia wydajność instalacji spada aż do 30%, nie wspominając już o znacznym skróceniu żywotności. 
+                            Nasz sprzęt daje pełną gwarancję bezpieczeństwa Państwa prywatnych "elektrowni".
+                        </p>
+                        <p class="technology__descr"><span class="technology__descr_blue">Myjemy wodą zdemineralizowaną,</span> nie pozostawiamy żadnych osadów, nie trzeba wyłączać instalacji w czasie wykonywania usługi.</p>
+                        <a href="tel:+48730789469" class="technology__btn btn blue-link blue-link_stroke">
+                            zapytaj o Czyszczeniu kostki brukowej
+                            <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 7.5H20M20 7.5L13.5 1M20 7.5L13.5 14" stroke="#282828" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <div class="gallery__header">
+                <div class="gallery__logo-box">
+                    <img src="img/gallery/logo.png" alt="Logo - EcoMiasto" class="gallery__logo">
+                </div>
+                <div class="gallery__tags">
+                    <h4 class="gallery__title">EcoMiasto</h4>
+                    <p class="gallery__descr">Mobilna Myjnia Parowa</p>
+                    <div class="gallery__tags-wrapper">
+                        <p class="gallery__tag">#CzyszczenieKostkiBrukowej</p>
+                        <p class="gallery__tag">#CzyszczenieDachu</p>
+                        <p class="gallery__tag">#CzyszczenieElewacji</p>
+                        <p class="gallery__tag">#CzyszczeniePaneliFW</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__wrapper">
+                <div class="gallery__item">
+                    <div class="gallery__cover">
+                        <picture>
+                            <source type="image/webp" srcset="img/gallery/gallery-1/webp38.png 1x, img/gallery/gallery-1/webp38.2x.webp 2x, img/gallery/gallery-1/webp38.3x.webp 3x">
+                            <img class="gallery__img" src="img/gallery/gallery-1/webp38.png" srcset="img/gallery/gallery-1/webp38.2x.webp 2x, img/gallery/gallery-1/webp38.3x.webp 3x" alt="Czyszczenie kostki brukowej i powierzchni płaskich">
+                        </picture>
+                        <a href="gallery.html" class="gallery__link blue-link">
+                            przejdź do galerii
+                            <svg width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.28564 9.49993H25.7142M25.7142 9.49993L17.3571 1.2666M25.7142 9.49993L17.3571 17.7333" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__cover">
+                        <picture>
+                            <source type="image/webp" srcset="img/gallery/gallery-1/webp20.png 1x, img/gallery/gallery-1/webp20.2x.webp 2x, img/gallery/gallery-1/webp20.3x.webp 3x">
+                            <img class="gallery__img" src="img/gallery/gallery-1/webp20.png" srcset="img/gallery/gallery-1/webp20.2x.webp 2x, img/gallery/gallery-1/webp20.3x.webp 3x" alt="Mycie elewacji">
+                        </picture>
+                    <a href="gallery.html" class="gallery__link blue-link">
+                        przejdź do galerii
+                        <svg width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.28564 9.49993H25.7142M25.7142 9.49993L17.3571 1.2666M25.7142 9.49993L17.3571 17.7333" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>  
+                    </a>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <div class="gallery__cover">
+                        <picture>
+                            <source type="image/webp" srcset="img/gallery/gallery-1/webp9.png 1x, img/gallery/gallery-1/webp9.2x.webp 2x, img/gallery/gallery-1/webp9.3x.webp 3x">
+                            <img class="gallery__img" src="img/gallery/gallery-1/webp9.png" srcset="img/gallery/gallery-1/webp9.2x.webp 2x, img/gallery/gallery-1/webp9.3x.webp 3x" alt="Mycie dachu">
+                        </picture>
+                        <a href="gallery.html" class="gallery__link blue-link">
+                            przejdź do galerii
+                            <svg width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.28564 9.49993H25.7142M25.7142 9.49993L17.3571 1.2666M25.7142 9.49993L17.3571 17.7333" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery__item gallery__item_visible">
+                    <a href="gallery.html" class="gallery__link gallery__link_blue blue-link">
+                        Zobacz galerię
+                        <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7.5H20M20 7.5L13.5 1M20 7.5L13.5 14" stroke="#282828" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="results section">
+        <div class="container">
+            <h2 class="results__title">
+                Zobacz w naszej galerii wyniki
+            </h2>
+            <div class="swiper-two swiper">
+                <div class="swiper-wrapper-two swiper-wrapper">
+                    <div class="results__title swiper-slide"><p>czyszczenia kostki brukowej</p></div>
+                    <div class="results__title swiper-slide"><p>czyszczenia dachu</p></div>
+                    <div class="results__title swiper-slide"><p>czyszczenia elewacji</p></div>
+                    <div class="results__title swiper-slide"><p>czyszczenia paneli FV</p></div>
+                </div>
+            </div>
+            <a href="gallery.html" class="results__link blue-link blue-link_stroke">
+                przejdź do galerii
+                <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7.5H20M20 7.5L13.5 1M20 7.5L13.5 14" stroke="#282828" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </a>
+        </div>
+    </section>
+    <section class="contacts section scrollto" id="contacts">
+        <div class="container">
+            <div class="map" id="map"></div>
+            <div class="contacts__wrapper">
+                <p class="contacts__text"><span class="contacts__text-full">Masz pytania?</span> Zadzwoń lub napisz do nas.</p>
+                <p class="contacts__text contacts__text_small">Preferujemy telefoniczne umawianie się na wizytę. </p>
+                <div class="contacts__box">
+                    <div class="contacts__box-item blue-link">
+                        <svg class="contacts__mail" width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.875 0H25.125C27.7245 0 29.8488 2.03467 29.9924 4.59837L30 4.875V19.125C30 21.7245 27.9653 23.8488 25.4016 23.9923L25.125 24H4.875C2.27546 24 0.151125 21.9653 0.0077101 19.4016L0 19.125V4.875C0 2.27545 2.03467 0.151125 4.59837 0.00770974L4.875 0H25.125H4.875ZM27.75 8.0595L15.524 14.4955C15.2429 14.6434 14.9147 14.6646 14.6202 14.559L14.4761 14.4955L2.25 8.061V19.125C2.25 20.5023 3.31067 21.6318 4.65971 21.7413L4.875 21.75H25.125C26.5023 21.75 27.6318 20.6893 27.7413 19.3402L27.75 19.125V8.0595ZM25.125 2.25H4.875C3.49775 2.25 2.36822 3.31066 2.2587 4.6597L2.25 4.875V5.5185L15 12.2287L27.75 5.517V4.875C27.75 3.49774 26.6894 2.36821 25.3403 2.2587L25.125 2.25Z" fill="#282828"/>
+                        </svg>
+                        <a href="mailto:info@ecomiasto.pl" class="contacts__link">info@ecomiasto.pl</a>
+                    </div>
+                    <div class="contacts__box-item blue-link">
+                        <svg class="contacts__phone" width="22.95" height="30.14" viewBox="0 0 23 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.21042 0.703829L5.96092 0.176189C7.94467 -0.421771 10.0642 0.544574 10.9137 2.43432L12.2662 5.4429C12.9903 7.05364 12.6087 8.94666 11.3172 10.1511L9.07573 12.2413C9.01018 12.3024 8.96863 12.3849 8.95873 12.474C8.89228 13.0696 9.29608 14.2297 10.2264 15.8412C10.903 17.0131 11.5153 17.8348 12.0366 18.2971C12.3997 18.6192 12.5997 18.6888 12.6849 18.6634L15.7003 17.7415C17.3887 17.2254 19.2184 17.8408 20.2515 19.2726L22.1725 21.9351C23.3817 23.6109 23.1643 25.9228 21.6639 27.3438L20.3343 28.6029C18.8997 29.9616 16.8573 30.4678 14.9542 29.9367C10.8231 28.7836 7.11913 25.2973 3.80131 19.5508C0.478889 13.7962 -0.686896 8.8395 0.387779 4.68181C0.879584 2.77909 2.32878 1.27101 4.21042 0.703829ZM4.85977 2.85808C3.73078 3.19839 2.86126 4.10325 2.56618 5.24488C1.66221 8.74215 2.6955 13.1355 5.74987 18.4258C8.80018 23.709 12.0835 26.7994 15.5592 27.7695C16.701 28.0882 17.9263 27.7845 18.7872 26.9692L20.1166 25.7101C20.7987 25.0642 20.8975 24.0133 20.3479 23.2516L18.4269 20.5891C17.9572 19.9384 17.1256 19.6585 16.3581 19.8933L13.3351 20.8174C11.5806 21.3405 9.98803 19.9282 8.2779 16.9662C7.12543 14.9701 6.5883 13.4271 6.72265 12.2242C6.79225 11.601 7.08261 11.0233 7.54119 10.5957L9.78268 8.50554C10.3698 7.95807 10.5432 7.09761 10.2141 6.36546L8.86153 3.35688C8.47539 2.4979 7.51197 2.05864 6.61027 2.33044L4.85977 2.85808Z" fill="#282828"/>
+                        </svg>
+                        <a href="tel:+48730789469" class="contacts__link">+48 730 789 469</a>
+                    </div>
+                    <div class="contacts__box-item blue-link">
+                        <svg class="contacts__local" width="26.12" height="29.97" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.76443 3.85085C9.86504 -1.24976 18.1348 -1.24976 23.2354 3.85085C28.336 8.95147 28.336 17.2213 23.2354 22.3219L21.4549 24.0827C20.1427 25.3706 18.4399 27.0266 16.3462 29.0509C15.0377 30.316 12.962 30.3158 11.6539 29.0506L6.41723 23.9567C5.75909 23.3105 5.20819 22.7656 4.76443 22.3219C-0.336189 17.2213 -0.336189 8.95147 4.76443 3.85085ZM21.6443 5.44184C17.4224 1.2199 10.5774 1.2199 6.35541 5.44184C2.13349 9.66377 2.13349 16.5089 6.35541 20.7308L8.58603 22.9321C9.81438 24.1342 11.3585 25.6348 13.2181 27.4333C13.6541 27.8549 14.3461 27.8551 14.7821 27.4334L19.8745 22.4812C20.578 21.7907 21.1679 21.2072 21.6443 20.7308C25.8664 16.5089 25.8664 9.66377 21.6443 5.44184ZM13.9999 8.99683C16.4864 8.99683 18.5023 11.0126 18.5023 13.4992C18.5023 15.9857 16.4864 18.0014 13.9999 18.0014C11.5133 18.0014 9.49759 15.9857 9.49759 13.4992C9.49759 11.0126 11.5133 8.99683 13.9999 8.99683ZM13.9999 11.2468C12.7559 11.2468 11.7476 12.2552 11.7476 13.4992C11.7476 14.7431 12.7559 15.7514 13.9999 15.7514C15.2438 15.7514 16.2523 14.7431 16.2523 13.4992C16.2523 12.2552 15.2438 11.2468 13.9999 11.2468Z" fill="#282828"/>
+                        </svg>
+                        <!--noindex-->
+                        <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.google.com/maps/place/EcoMiasto+detailing+auto+kosmetyka+parowe+pranie+tapicerki+polerowanie+i+zabezpieczenie+lakieru/@50.672357,17.98532,16z/data=!4m6!3m5!1s0x47105479a8a72d9b:0xd422417e2966a2d0!8m2!3d50.672357!4d17.9853199!16s%2Fg%2F11clsn2ycn?hl=pl" class="contacts__link">Częstochowska 44, 45-425 Opole</a>
+                        <!--/noindex-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner section">
+        <div class="container">
+            <div class="banner__wrapper">
+                <a href="tel:+48730789469" class="banner__link">
+                    Zapraszamy do skorzystania z darmowej wyceny
+                    <img src="img/svg/arrow-top.svg" alt="arrow">
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <div class="footer__item-content">
+                        <a href="#" class="footer__logo" onclick="scrollToTop()">
+                            <img src="img/footer-logo.png" alt="Logo - EcoMiasto" class="footer__logo-img">
+                        </a>
+                        <div class="footer__socials">
+                            <div class="footer__socials-item blue-link">
+                                <svg width="17.5" height="14" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.875 0H25.125C27.7245 0 29.8488 2.03467 29.9924 4.59837L30 4.875V19.125C30 21.7245 27.9653 23.8488 25.4016 23.9923L25.125 24H4.875C2.27546 24 0.151125 21.9653 0.0077101 19.4016L0 19.125V4.875C0 2.27545 2.03467 0.151125 4.59837 0.00770974L4.875 0H25.125H4.875ZM27.75 8.0595L15.524 14.4955C15.2429 14.6434 14.9147 14.6646 14.6202 14.559L14.4761 14.4955L2.25 8.061V19.125C2.25 20.5023 3.31067 21.6318 4.65971 21.7413L4.875 21.75H25.125C26.5023 21.75 27.6318 20.6893 27.7413 19.3402L27.75 19.125V8.0595ZM25.125 2.25H4.875C3.49775 2.25 2.36822 3.31066 2.2587 4.6597L2.25 4.875V5.5185L15 12.2287L27.75 5.517V4.875C27.75 3.49774 26.6894 2.36821 25.3403 2.2587L25.125 2.25Z" fill="#282828"/>
+                                </svg>
+                                <a href="mailto:info@ecomiasto.pl" class="contacts__link">info@ecomiasto.pl</a>
+                            </div>
+                            <div class="footer__socials-item blue-link">
+                                <svg width="13.39" height="17.58" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.53958 1.16057L3.5607 0.852777C4.71789 0.503967 5.9543 1.06767 6.44981 2.17002L7.2388 3.92502C7.66116 4.86463 7.43856 5.96888 6.68519 6.67147L5.37767 7.89077C5.33944 7.92638 5.3152 7.97451 5.30942 8.02648C5.27066 8.37394 5.50621 9.05067 6.04889 9.99068C6.4436 10.6743 6.80077 11.1536 7.10484 11.4233C7.31667 11.6112 7.43331 11.6518 7.48301 11.637L9.24202 11.0992C10.2269 10.7981 11.2942 11.1571 11.8969 11.9923L13.0175 13.5455C13.7228 14.523 13.596 15.8716 12.7208 16.7005L11.9452 17.435C11.1083 18.2276 9.91691 18.5229 8.8068 18.2131C6.39696 17.5404 4.23632 15.5068 2.30093 12.1546C0.362848 8.7978 -0.317193 5.90637 0.3097 3.48106C0.596587 2.37114 1.44195 1.49142 2.53958 1.16057ZM2.91836 2.41722C2.25979 2.61573 1.75257 3.14356 1.58044 3.80952C1.05312 5.84959 1.65587 8.41236 3.43759 11.4984C5.21694 14.5802 7.13222 16.383 9.15969 16.9489C9.82574 17.1348 10.5405 16.9576 11.0427 16.482L11.8182 15.7476C12.2161 15.3708 12.2737 14.7578 11.9531 14.3134L10.8325 12.7603C10.5585 12.3807 10.0734 12.2175 9.62571 12.3544L7.86232 12.8935C6.83884 13.1986 5.90985 12.3748 4.91227 10.6469C4.24 9.48257 3.92667 8.58246 4.00504 7.88079C4.04564 7.51725 4.21502 7.18029 4.48252 6.93083L5.79006 5.71156C6.13254 5.39221 6.23369 4.89027 6.04171 4.46318L5.25272 2.70818C5.02747 2.20711 4.46548 1.95088 3.93949 2.10943L2.91836 2.41722Z" fill="#282828"/>
+                                </svg>
+                                <a href="tel:+48730789469" class="contacts__link">+48 730 789 469</a>
+                            </div>
+                            <div class="footer__socials-item blue-link">
+                                <svg width="15.24" height="17.48" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.76443 3.85085C9.86504 -1.24976 18.1348 -1.24976 23.2354 3.85085C28.336 8.95147 28.336 17.2213 23.2354 22.3219L21.4549 24.0827C20.1427 25.3706 18.4399 27.0266 16.3462 29.0509C15.0377 30.316 12.962 30.3158 11.6539 29.0506L6.41723 23.9567C5.75909 23.3105 5.20819 22.7656 4.76443 22.3219C-0.336189 17.2213 -0.336189 8.95147 4.76443 3.85085ZM21.6443 5.44184C17.4224 1.2199 10.5774 1.2199 6.35541 5.44184C2.13349 9.66377 2.13349 16.5089 6.35541 20.7308L8.58603 22.9321C9.81438 24.1342 11.3585 25.6348 13.2181 27.4333C13.6541 27.8549 14.3461 27.8551 14.7821 27.4334L19.8745 22.4812C20.578 21.7907 21.1679 21.2072 21.6443 20.7308C25.8664 16.5089 25.8664 9.66377 21.6443 5.44184ZM13.9999 8.99683C16.4864 8.99683 18.5023 11.0126 18.5023 13.4992C18.5023 15.9857 16.4864 18.0014 13.9999 18.0014C11.5133 18.0014 9.49759 15.9857 9.49759 13.4992C9.49759 11.0126 11.5133 8.99683 13.9999 8.99683ZM13.9999 11.2468C12.7559 11.2468 11.7476 12.2552 11.7476 13.4992C11.7476 14.7431 12.7559 15.7514 13.9999 15.7514C15.2438 15.7514 16.2523 14.7431 16.2523 13.4992C16.2523 12.2552 15.2438 11.2468 13.9999 11.2468Z" fill="#282828"/>
+                                </svg>
+                                <!--noindex-->
+                                <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.google.com/maps/place/EcoMiasto+detailing+auto+kosmetyka+parowe+pranie+tapicerki+polerowanie+i+zabezpieczenie+lakieru/@50.672357,17.98532,16z/data=!4m6!3m5!1s0x47105479a8a72d9b:0xd422417e2966a2d0!8m2!3d50.672357!4d17.9853199!16s%2Fg%2F11clsn2ycn?hl=pl" class="contacts__link">Częstochowska 44, 45-425 Opole</a>
+                                <!--/noindex-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__socials-item blue-link blue-link_stroke">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.625 1.75H13C11.8397 1.75 10.7269 2.21094 9.90641 3.03141C9.08594 3.85188 8.625 4.96468 8.625 6.125V8.75H6V12.25H8.625V19.25H12.125V12.25H14.75L15.625 8.75H12.125V6.125C12.125 5.89294 12.2172 5.67038 12.3813 5.50628C12.5454 5.34219 12.7679 5.25 13 5.25H15.625V1.75Z" stroke="#282828" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <!--noindex-->
+                        <a href="https://www.facebook.com/ecomiastopl" class="contacts__link" rel="nofollow noopener noreferrer" target="_blank">Odwiedź stronę Ecomiasto na Facebooku</a>
+                        <!--/noindex-->
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-content">
+                        <div class="footer__menu">
+                            <nav class="nav">
+                                <ul class="nav__footer nav__list">
+                                    <li class="nav__item"><a href="#" onclick="scrollToTop()">Początek</a></li>
+                                    <li class="nav__item"><a href="#services">Usługi</a></li>
+                                    <li class="nav__item"><a href="#technology">Technologia</a></li>
+                                    <li class="nav__item"><a href="#gallery">Galeria</a></li>
+                                    <li class="nav__item"><a href="#contacts">Kontakt</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer__item-content">
+                        <span class="footer__copyright">© 2023 Ecomiasto. Wszelkie prawa zastrzeżone</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ2N71fnrj0E8KdDpZhlCVFCvxlG6CglI&region=PL&language=pl&callback=initMap&v=weekly" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
